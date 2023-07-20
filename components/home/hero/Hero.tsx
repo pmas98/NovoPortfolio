@@ -22,10 +22,10 @@ export const Hero = () => {
         </Reveal>
         <Reveal>
           <p className={styles.aboutCopy}>
-            I`&apos;`m a chemical engineer that fell in love for
+            I&apos;m a chemical engineer that fell in love for
             programming. I got years of experience working with
             Data Analysis and Web Development on some cool stuff!
-            Let`&apos;`s connect!
+            Let&apos;s connect!
           </p>
         </Reveal>
         <Reveal>
