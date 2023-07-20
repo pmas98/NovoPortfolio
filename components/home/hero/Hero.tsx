@@ -12,12 +12,12 @@ export const Hero = () => {
       <div className={styles.copyWrapper}>
         <Reveal>
           <h1 className={styles.title}>
-            Hey, I`&apos;`m Pedro<span>.</span>
+            Hey, I&apos;m Pedro<span>.</span>
           </h1>
         </Reveal>
         <Reveal>
           <h2 className={styles.subTitle}>
-            I`&apos;`m a <TypeAnimation sequence={['Data Scientist', 2000, 'Web Developer', 2000 ,'CS Student', 2000]} speed={1} repeat={Infinity}></TypeAnimation>  
+            I&apos;m a <TypeAnimation sequence={['Data Scientist', 2000, 'Web Developer', 2000 ,'CS Student', 2000]} speed={1} repeat={Infinity}></TypeAnimation>  
           </h2>
         </Reveal>
         <Reveal>
