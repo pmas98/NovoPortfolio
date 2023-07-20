@@ -1,0 +1,58 @@
+.outlineButton {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  
+  padding: 1.2rem 2.4rem;
+  
+  border: 1px solid var(--brand);
+  background: transparent;
+  color: var(--brand);
+  font-size: var(--text-sm);
+  border-radius: 4px;
+
+  position: relative;
+  z-index: 20;
+
+  overflow: hidden;
+
+  transition: 0.2s color;
+}
+
+.outlineButton::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--text);
+  
+  height: 100%;
+  width: 100%;
+
+  left: -100%;
+  top: -100%;
+
+  transition: 0.2s left, 0.2s top;
+}
+
+.outlineButton::after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  border: 3px solid black; /* Add a black border */
+  top: 6px; /* Adjust the position to create the second border */
+  left: 6px; /* Adjust the position to create the second border */
+  opacity: 0; /* Start with opacity 0 to hide the second border */
+  height: calc(100% - 12px); /* Adjust the height to compensate for the double border */
+  width: calc(100% - 12px); /* Adjust the width to compensate for the double border */
+  transition: 0.2s opacity; /* Add transition for smooth appearance */
+}
+
+.outlineButton:hover {
+  border: 3px solid var(--brand);;
+  color: var(--background);
+}
+
+.outlineButton:hover::before {
+  left: 0;
+  top: 0;
+}
