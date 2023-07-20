@@ -14,8 +14,8 @@ export const About = () => {
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Hi! I`&apos;`m Pedro, if you haven`&apos;`t already gathered that by
-              now. I`&apos;`m a Chemical Engineer currently studying computer science from Fortaleza,
+              Hi! I&apos;m Pedro, if you haven&apos;t already gathered that by
+              now. I&apos;m a Chemical Engineer currently studying computer science from Fortaleza,
               Brazil. I specialize in <span>Machine Learning</span>, primarily visual computing, but i
               love building with whatever tools are right for the job.
             </p>
@@ -36,16 +36,16 @@ export const About = () => {
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              Outside of work, I do a lot of stuff. Lately, i`&apos;`ve been really interested on 
-              <span> vector databases</span>. But if you don`&apos;`t catch me programming, i`&apos;`m probably
+              Outside of work, I do a lot of stuff. Lately, i&apos;ve been really interested on 
+              <span> vector databases</span>. But if you don&apos;t catch me programming, i&apos;m probably
               painting or reading fantasy novels!
             </p>
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              I`&apos;`m passively looking for new positions where I can learn new stuff
+              I&apos;m passively looking for new positions where I can learn new stuff
               and apply them. If you think
-              you`&apos;`ve got an opening that I might like, let`&apos;`s connect!
+              you&apos;ve got an opening that I might like, let&apos;s connect!
               🔗
             </p>
           </Reveal>

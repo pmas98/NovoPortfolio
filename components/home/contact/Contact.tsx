@@ -26,7 +26,7 @@ export const Contact = () => {
             <Link href="https://github.com/pmas98" target="_blank" rel="nofollow">
               Github
             </Link>{" "}
-            if that`&apos;`s more your speed.
+            if that&apos;s more your speed.
           </p>
         </Reveal>
         <Reveal width="100%">
