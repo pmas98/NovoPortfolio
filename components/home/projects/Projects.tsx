@@ -19,7 +19,7 @@ export const Projects = () => {
 const projects = [
   {
     title: "TicTacToe",
-    imgSrc: "TicTacToe.png",
+    imgSrc: "https://firebasestorage.googleapis.com/v0/b/portfolio-bb550.appspot.com/o/TicTacToe.png?alt=media&token=b2861120-1486-4908-a8c4-91c7f77dbc47",
     code: "https://github.com/pmas98/TicTacToe",
     projectLink: "https://pmas98.github.io/TicTacToe/",
     tech: ["CSS", "React", "HTML", "JavaScript"],
@@ -41,7 +41,7 @@ const projects = [
   },
   {
     title: "Chatter",
-    imgSrc: "Chatter.png",
+    imgSrc: "https://firebasestorage.googleapis.com/v0/b/portfolio-bb550.appspot.com/o/Chatter.png?alt=media&token=f61b4990-8c66-4687-ab88-026d4c75b8d5",
     code: "https://github.com/pmas98/Chatter",
     projectLink: "https://pmas98.github.io/Chatter/",
     tech: ["React", "Firebase", "NextJS", "Prisma", "NoSQL"],
@@ -65,7 +65,7 @@ const projects = [
   },
   {
     title: "Manage",
-    imgSrc: "manage.png",
+    imgSrc: "https://firebasestorage.googleapis.com/v0/b/portfolio-bb550.appspot.com/o/manage.png?alt=media&token=9f02d7c5-cc69-42f9-95a0-cd294cabd157",
     code: "https://www.github.com/pmas98/manage",
     projectLink: "https://pmas98.github.io/Manage/",
     tech: ["HTML", "CSS",  "JavaScript"],
@@ -92,7 +92,7 @@ const projects = [
   },
   {
     title: "Zeus",
-    imgSrc: "Zeus.png",
+    imgSrc: "https://firebasestorage.googleapis.com/v0/b/portfolio-bb550.appspot.com/o/Zeus.png?alt=media&token=67355490-432c-4828-8938-0a2f401768c6",
     code: "https://github.com/pmas98/Zeus",
     projectLink: "https://pmas98.github.io/Zeus",
     tech: ["NodeJS", "React", "MongoDB", "Formik"],
