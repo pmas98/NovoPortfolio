@@ -1,20 +1,8 @@
 import { SectionHeader } from "@/components/utils/SectionHeader";
 import { Project } from "./Project";
 import styles from "./projects.module.scss";
-
-export const Projects = () => {
-  return (
-    <section className="section-wrapper" id="projects">
-      <SectionHeader title="Projects" dir="r" />
-
-      <div className={styles.projects}>
-        {projects.map((project) => {
-          return <Project key={project.title} {...project} />;
-        })}
-      </div>
-    </section>
-  );
-};
+import { useState } from "react";
+import { TabNavigation } from "./TabNavigation";
 
 const projects = [
   {
@@ -23,6 +11,7 @@ const projects = [
     code: "https://github.com/pmas98/TicTacToe",
     projectLink: "https://pmas98.github.io/TicTacToe/",
     tech: ["CSS", "React", "HTML", "JavaScript"],
+    type: 'Web Dev',
     description:
       "TicTacToe is a classic game that i actually wanted to make to challenge me and some friends.",
     modalContent: (
@@ -45,6 +34,7 @@ const projects = [
     code: "https://github.com/pmas98/Chatter",
     projectLink: "https://pmas98.github.io/Chatter/",
     tech: ["React", "Firebase", "NextJS", "Prisma", "NoSQL"],
+    type: 'Web Dev',
     description:
       "A messenger app with a minimalistic design. It stores messages, images and authenticates users.",
     modalContent: (
@@ -69,6 +59,7 @@ const projects = [
     code: "https://www.github.com/pmas98/manage",
     projectLink: "https://pmas98.github.io/Manage/",
     tech: ["HTML", "CSS",  "JavaScript"],
+    type: 'Web Dev',
     description:
       "This was my first professional front end project. It was built without any frameworks, just pure HTML, CSS and JS.",
     modalContent: (
@@ -96,6 +87,7 @@ const projects = [
     code: "https://github.com/pmas98/Zeus",
     projectLink: "https://pmas98.github.io/Zeus",
     tech: ["NodeJS", "React", "MongoDB", "Formik"],
+    type: 'Web Dev',
     description:
       "A Fullstack app that was a challenge given to me on my internship at VORTEX",
     modalContent: (
@@ -116,4 +108,101 @@ const projects = [
       </>
     ),
   },
+  {
+    title: "Animal Crossing EDA",
+    imgSrc: "https://animalcrossingworld.com/wp-content/uploads/2020/01/animal-crossing-new-horizons-key-artwork-january-2020-large-logo.png",
+    code: "https://www.kaggle.com/pedrogcf/animal-crossing",
+    projectLink: "https://www.kaggle.com/pedrogcf/animal-crossing",
+    tech: ["Python", "Seaborn", "Numpy", "Pandas", "Matplotlib"],
+    type: 'Data Science',
+    description:
+      "An Exploratory Data Analysis over Animal Crossing characters and their popularity!",
+    modalContent: (
+      <>
+        <p>Animal Crossing New Horizons is one of favourite games, it's so cozy. And it's also 
+            a great game to <span>explore data.</span> There are so many characters!
+        </p>
+        <p>
+            All the charts are done using <span>Seaborn</span>, for aesthetic reasons, while the data processing
+            is done with <span>Pandas.</span>
+        </p>
+        <p>2 datasets were used, one regarding the popularity of each New Horizons character, and another
+          one that shows characteristics, such as Gender, Species, Personality.
+        </p>
+        <p>
+          One of the challeging aspects of this project were that i had to <span>join both of these datasets</span>, using as key
+          the name of each character, i needed to figure out if there were typing errors or the same name in both databases written in a different way.
+          This was done using <span>FuzzyWuzzy</span> a great python library.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Web Scaping Pokemon Images",
+    imgSrc: "https://www.theclick.gg/wp-content/uploads/2022/11/Pokemon-Anime-Luxton-Dugtrio.webp",
+    code: "https://colab.research.google.com/drive/1yoZcIyQR4avMPZ2evK68c_FBd0-tpbFo?authuser=4",
+    projectLink: "https://colab.research.google.com/drive/1yoZcIyQR4avMPZ2evK68c_FBd0-tpbFo?authuser=4",
+    tech: ["Python", "BeautifulSoup", "UrlLib", "JSON", "Requests"],
+    type: 'Data Science',
+    description:
+      "A code for Web Scraping thousands of images of pokemon on Google Images",
+    modalContent: (
+      <>
+        <p>Creating a machine learning model for detecting pokemon was a long time project that  
+            i had, but i never had found the amount of data for it, so i decided <span>to do it myself</span>, with scraping
+        </p>
+        <p>This code takes an array of pokemon names and iterates over them, creating a 
+          folder for every pokemon and then populating it. Finaly, it finds and deletes duplicates.
+        </p>
+        <p>
+          I decided to use 300 images for every pokemon, not only because of storage constraints, but also
+          because there aren't a lot of images for every single pokemon, so 300 it is!
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Creating a Pokedex using Keras and VGG16",
+    imgSrc: "https://images.nintendolife.com/f4e3a801259f8/1280x720.jpg",
+    code: "https://colab.research.google.com/drive/1tr9q8rfmHPV2WExxmFIMX7vIjzpaS49Q?usp=sharing",
+    projectLink: "https://colab.research.google.com/drive/1tr9q8rfmHPV2WExxmFIMX7vIjzpaS49Q?usp=sharing",
+    tech: ["Python", "BeautifulSoup", "UrlLib", "JSON", "Requests"],
+    type: 'Data Science',
+    description:
+      "A pokedex is the dream of every kid that played pokemon, so why not do it using visual computation?",
+    modalContent: (
+      <>
+        <p>Creating a machine learning model for detecting pokemon was a long time project that  
+            i had, but i never had found the amount of data for it, so i decided <span>to do it myself</span>, with scraping
+        </p>
+        <p>This code takes the images of pokemon i got on the previous web scraping project and creates a 
+          model by using transfer learning with VGG 16.
+        </p>
+        <p>
+          The model was able to distinguish between 7 differente pokemons with an accuracy of 95%!
+        </p>
+      </>
+    ),
+  },
 ];
+
+
+export const Projects = () => {
+  const [selectedTab, setSelectedTab] = useState('Web Dev');
+  const filteredProjects = projects.filter((project) => project.type === selectedTab);
+
+  return (
+    <section className="section-wrapper" id="projects">
+      <SectionHeader title="Projects" dir="r" />
+
+      <TabNavigation onSelectTab={setSelectedTab} />
+
+      <div className={styles.projects}>
+        {filteredProjects.map((project) => {
+          return <Project key={project.title} {...project} />;
+        })}
+      </div>
+    </section>
+  );
+};
+

@@ -15,6 +15,7 @@ interface Props {
   projectLink: string;
   tech: string[];
   modalContent: JSX.Element;
+  type: string;
 }
 
 export const ProjectModal = ({
@@ -26,6 +27,7 @@ export const ProjectModal = ({
   title,
   code,
   tech,
+  type
 }: Props) => {
   useEffect(() => {
     const body = document.querySelector("body");

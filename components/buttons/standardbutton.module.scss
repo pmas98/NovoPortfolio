@@ -2,14 +2,16 @@
   outline: none;
   border: none;
   cursor: pointer;
+  margin-right: 15px;
 
   padding: 1.2rem 2.4rem;
 
-  background: var(--brand);
-  color: var(--background-dark);
+  border: 1px solid var(--brand);
+  background: transparent;
+  color: var(--brand);
   font-weight: 600;
   font-size: var(--text-sm);
-  border-radius: 4px;
+  border-radius: 2px;
 
   position: relative;
   z-index: 20;
@@ -20,5 +22,40 @@
 }
 
 .standardButton:hover {
+  border: 2px solid var(--brand);
   opacity: 0.9;
+}
+
+.standardButtonActive {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+
+  padding: 1.2rem 2.4rem;
+
+  border: 1px solid var(--brand);
+  background: white;
+  color: black;
+  font-weight: 600;
+  font-size: var(--text-sm);
+  border-radius: 2px;
+
+  position: relative;
+  z-index: 20;
+
+  overflow: hidden;
+
+  transition: 0.2s opacity;
+}
+
+
+@media (max-width: 600px) {
+  .standardButton {
+    margin-right: 15px;
+    padding: 1rem 3rem;
+    font-size: var(--text-xs); /* You can define --text-xs in your CSS */
+    justify-content: center;
+    text-align: center;
+  }
 }

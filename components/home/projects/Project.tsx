@@ -14,6 +14,7 @@ interface Props {
   tech: string[];
   title: string;
   code: string;
+  type: string;
 }
 
 export const Project = ({
@@ -24,6 +25,7 @@ export const Project = ({
   title,
   code,
   tech,
+  type
 }: Props) => {
   const [hovered, setHovered] = useState(false);
 
@@ -104,6 +106,7 @@ export const Project = ({
         title={title}
         code={code}
         tech={tech}
+        type={type}
       />
     </>
   );
