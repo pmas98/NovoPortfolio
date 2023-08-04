@@ -12,7 +12,6 @@ export const TabNavigation = ({
      onSelectTab 
 }:Props) => {
   const [activeTab, setActiveTab] = useState('Web Dev');
-  console.log(activeTab);
   
   const handleTabClick = (tabValue: string) => {
     setActiveTab(tabValue);
@@ -25,8 +24,13 @@ export const TabNavigation = ({
 
   return (
     <div className={styles.mainTab}>
-      <StandardButton onClick={() => handleTabClick('Web Dev')} children={'Web Dev'} isActive={activeTab === 'Web Dev'} />
-      <StandardButton onClick={() => handleTab2Click()} children={'Data Science'} isActive={activeTab === 'Data Science'} />
+      <StandardButton onClick={() => handleTabClick('Web Dev')} isActive={activeTab === 'Web Dev'} >
+          Web Dev
+      </StandardButton>
+
+      <StandardButton onClick={() => handleTab2Click()} isActive={activeTab === 'Data Science'}>
+          Data Science
+      </StandardButton>
     </div>
   );
 };

@@ -119,7 +119,7 @@ const projects = [
       "An Exploratory Data Analysis over Animal Crossing characters and their popularity!",
     modalContent: (
       <>
-        <p>Animal Crossing New Horizons is one of favourite games, it's so cozy. And it's also 
+        <p>Animal Crossing New Horizons is one of favourite games, it&apos;s so cozy. And it&apos;s also 
             a great game to <span>explore data.</span> There are so many characters!
         </p>
         <p>
@@ -156,7 +156,7 @@ const projects = [
         </p>
         <p>
           I decided to use 300 images for every pokemon, not only because of storage constraints, but also
-          because there aren't a lot of images for every single pokemon, so 300 it is!
+          because there aren&apos;t a lot of images for every single pokemon, so 300 it is!
         </p>
       </>
     ),
