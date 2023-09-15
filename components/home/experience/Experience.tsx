@@ -14,9 +14,25 @@ export const Experience = () => {
 
 const experience = [
   {
+    title: "INSIDE THE BOX",
+    position: "Fullstack Intern",
+    time: "2023 - Present",
+    location: "Remote",
+    description:
+      "I help develop apps and web applications, alongside that i'm working on Machine Learning, automating a task with OCR.",
+    tech: [
+      "Docker",
+      "ReactNative",
+      "Tensorflow",
+      "TypeScript",
+      "React",
+      "Firebase",
+      "GCP"
+    ],
+  },{
     title: "VORTEX",
     position: "AI/ML Intern",
-    time: "2023 - Present",
+    time: "2023/03 - 2023/09",
     location: "Fortaleza",
     description:
       "I help build and scale ML models using Tensorflow and Keras. Alongside that, i deploy them into REST APIs and develop apps with ReactNative.",
