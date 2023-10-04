@@ -55,6 +55,9 @@ export const ProjectModal = ({
           className={styles.modalImage}
           src={imgSrc}
           alt={`An image of the ${title} project.`}
+          style={{
+            maxHeight: 500
+          }}
         />
         <div className={styles.modalContent}>
           <h4>{title}</h4>

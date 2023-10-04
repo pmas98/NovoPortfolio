@@ -183,6 +183,29 @@ const projects = [
         </p>
       </>
     ),
+  },{
+    title: "Evaluating the toxicity of Youtube Comments",
+    imgSrc: "https://m.media-amazon.com/images/I/91o4-BvL0fL._AC_UF1000,1000_QL80_.jpg",
+    code: "https://colab.research.google.com/drive/1Ob9tEJ1wIqYRi9RjuMvKKV13ocgNKewY?usp=sharing",
+    projectLink: "https://colab.research.google.com/drive/1Ob9tEJ1wIqYRi9RjuMvKKV13ocgNKewY?usp=sharing",
+    tech: ["Transformers", "Python" ,"LLM", "Pandas", "AI"],
+    type: 'Data Science',
+    description:
+      "Youtube, just like the Internet, is full of toxicity, so i decided to create a model to help detect it on comments, and filter it for everyone!",
+    modalContent: (
+      <>  
+        <p>Since the <span>transformers</span> architecture has been so popular lately because of ChatGPT, i decided to do   
+            my own project on it, tackling a big problem that surrounds Youtube <span>toxic</span> comments
+        </p>
+        <p>This code uses the Youtube API to get a list of comments using from a playlist or a single video, and then 
+          stores it in a <span>Pandas</span> dataframe.
+        </p>
+        <p>
+          After getting the list of comments the model iterates over them and, using the <span>HuggingFace</span> library, and it evaluates
+          how toxic a comment is, using the Emotion English DistilRoBERTa-base model.
+        </p>
+      </>
+    ),
   },
 ];
 
