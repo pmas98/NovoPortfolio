@@ -55,24 +55,23 @@ const projects = [
   },
   {
     title: "Manage",
-    imgSrc: "https://firebasestorage.googleapis.com/v0/b/portfolio-bb550.appspot.com/o/manage.png?alt=media&token=9f02d7c5-cc69-42f9-95a0-cd294cabd157",
-    code: "https://www.github.com/pmas98/manage",
-    projectLink: "https://pmas98.github.io/Manage/",
-    tech: ["HTML", "CSS",  "JavaScript"],
+    imgSrc: "https://firebasestorage.googleapis.com/v0/b/image-container-1c51c.appspot.com/o/msedge_m1y7kLFTZx.png?alt=media&token=378df4d3-bc38-447b-b8c2-488abb7d5678",
+    code: "https://www.github.com/pmas98/djangoauth",
+    projectLink: "https://www.github.com/pmas98/djangoauth",
+    tech: ["Django", "React", "CSS", "Python", "Auth"],
     type: 'Web Dev',
     description:
-      "This was my first professional front end project. It was built without any frameworks, just pure HTML, CSS and JS.",
+      "A Django project with login, register, auth and responsible screens, using SQLite.",
     modalContent: (
       <>
         <p>
-          This was my first professional front end project. It was built <span>without</span> any <span>frameworks</span>
+          This was a project to learn <span>Django</span> using <span>React</span>
         </p>
         <p>
-          Since i had no experience at the beginning, this was a challenge, from the Frontend Mentor, to build a website for
-          a Dashboard like product
+          Since i had no experience at the beginning, this was a big challenge but i managed it! It has a <span>Crud, Auth and it&apos;s fully responsible</span>
         </p>
         <p>
-          It was pretty hard, because i had only done a pretty basic web dev course, so most of the stuff you are gonna see
+          It was pretty hard, because i had never done a project using auth before, so most of the stuff you are gonna see
           here came from a lot of <span>trial and error</span>
         </p>
         <p>
