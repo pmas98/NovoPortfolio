@@ -55,6 +55,34 @@ const projects = [
   },
   {
     title: "Manage",
+    imgSrc: "https://firebasestorage.googleapis.com/v0/b/portfolio-bb550.appspot.com/o/manage.png?alt=media&token=9f02d7c5-cc69-42f9-95a0-cd294cabd157",
+    code: "https://www.github.com/pmas98/manage",
+    projectLink: "https://pmas98.github.io/Manage/",
+    tech: ["HTML", "CSS",  "JavaScript"],
+    type: 'Web Dev',
+    description:
+      "This was my first professional front end project. It was built without any frameworks, just pure HTML, CSS and JS.",
+    modalContent: (
+      <>
+        <p>
+          This was my first professional front end project. It was built <span>without</span> any <span>frameworks</span>
+        </p>
+        <p>
+          Since i had no experience at the beginning, this was a challenge, from the Frontend Mentor, to build a website for
+          a Dashboard like product
+        </p>
+        <p>
+          It was pretty hard, because i had only done a pretty basic web dev course, so most of the stuff you are gonna see
+          here came from a lot of <span>trial and error</span>
+        </p>
+        <p>
+          It&apos;s funny to see how much i evolved and learnt from this!
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Manager",
     imgSrc: "https://firebasestorage.googleapis.com/v0/b/image-container-1c51c.appspot.com/o/msedge_m1y7kLFTZx.png?alt=media&token=378df4d3-bc38-447b-b8c2-488abb7d5678",
     code: "https://www.github.com/pmas98/djangoauth",
     projectLink: "https://www.github.com/pmas98/djangoauth",
@@ -76,33 +104,6 @@ const projects = [
         </p>
         <p>
           It&apos;s funny to see how much i evolved and learnt from this!
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Zeus",
-    imgSrc: "https://firebasestorage.googleapis.com/v0/b/portfolio-bb550.appspot.com/o/Zeus.png?alt=media&token=67355490-432c-4828-8938-0a2f401768c6",
-    code: "https://github.com/pmas98/Zeus",
-    projectLink: "https://pmas98.github.io/Zeus",
-    tech: ["NodeJS", "React", "MongoDB", "Formik"],
-    type: 'Web Dev',
-    description:
-      "A Fullstack app that was a challenge given to me on my internship at VORTEX",
-    modalContent: (
-      <>
-        <p>This is an app for managing a dog&apos;s expenses with food, meds, baths and toys.
-            It was built with <span>React</span>, storing the data with <span>MongoDB</span>.
-        </p>
-        <p>
-            I&apos;ve had never done a dashboard before, so learning the charts library, <span>Nivo</span>,
-            was pretty interesting!
-        </p>
-        <p>There also forms where the user enters their expenses, and, by using, <span>Formik</span>, 
-           i managed to avoid possible errors, such as the amount of food having a float point number.</p>
-        <p>
-          I also did some requisites first to make sure the final product solved the main issues, and a 
-          button where the user can import their expenses spreadsheet.
         </p>
       </>
     ),
