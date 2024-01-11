@@ -22,7 +22,7 @@ export const About = () => {
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              I currently work at VORTEX on <span>building and deploying ML models</span>. Lately, i prefer to work
+              I currently work at BIX TECH as a <span>software engineer</span>. Lately, i prefer to work
               mainly on the backend side, but for a long time i used to work on developing the frontend of personal 
               projects(i also <span className={styles.loveText}>love </span>
               <motion.span

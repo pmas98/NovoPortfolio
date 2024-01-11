@@ -14,12 +14,29 @@ export const Experience = () => {
 
 const experience = [
   {
+    title: "BIX TECH",
+    position: "Software Engineer",
+    time: "2023 - Present",
+    location: "Remote",
+    description:
+      "I help deliver great products, acting on DevOps operations, deploying and testing, developing the products and talking with clients.",
+    tech: [
+      "Docker",
+      "CI/CD",
+      "Django",
+      "GitHub Actions",
+      "Cypress",
+      "Automated testing",
+      "GCP"
+    ],
+  },
+  {
     title: "INSIDE THE BOX",
     position: "Fullstack Intern",
     time: "2023 - Present",
     location: "Remote",
     description:
-      "I help develop apps and web applications, alongside that i'm working on Machine Learning, automating a task with OCR.",
+      "I helped develop apps and web applications, alongside that i worked on a Machine Learning project, automating a task with OCR.",
     tech: [
       "Docker",
       "ReactNative",
@@ -35,7 +52,7 @@ const experience = [
     time: "2023/03 - 2023/09",
     location: "Fortaleza",
     description:
-      "I help build and scale ML models using Tensorflow and Keras. Alongside that, i deploy them into REST APIs and develop apps with ReactNative.",
+      "I built and scaled ML models using Tensorflow and Keras. Alongside that, i deployed them into REST APIs and develop apps with ReactNative.",
     tech: [
       "Docker",
       "ReactNative",
